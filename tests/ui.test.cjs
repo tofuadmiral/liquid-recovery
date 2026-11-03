@@ -2,7 +2,7 @@
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 const {JSDOM,VirtualConsole} = require('jsdom');
-const html=fs.readFileSync('output/replay.html','utf8');
+const html=fs.readFileSync(process.env.REPLAY_HTML||'output/replay.html','utf8');
 let errors=[];const log=new VirtualConsole();log.on('jsdomError',e=>errors.push(e.message));
 const dom=new JSDOM(html,{runScripts:'dangerously',url:'https://synthetic-replay.test/',virtualConsole:log,beforeParse(w){w.scrollTo=()=>{};}});
 const w=dom.window,d=w.document;

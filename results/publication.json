@@ -1,0 +1,15 @@
+{
+  "verified_at": "2026-11-03T01:53:59.956794+00:00",
+  "repo": "https://github.com/tofuadmiral/liquid-recovery",
+  "visibility": "public",
+  "site": "https://liquid-recovery.vercel.app/",
+  "memo": "https://liquid-recovery.vercel.app/memo.pdf",
+  "site_http": 200,
+  "memo_http": 200,
+  "memo_pages": 2,
+  "public_bytes_match_local": true,
+  "deployed_commit": "a2fd1b134374b27081439b0c0ddbc15af32d8ab3",
+  "site_sha256": "1d08e927408b5bab1bf1cb9813448c96f6429fdd54e4d8d4d0a50f3e5922352d",
+  "memo_sha256": "794e782a54553e295e21fb93d96d6f5a30201858f299a7707acf4f0aa02f8399",
+  "verification": "HTTP content and hashes plus isolated DOM functional tests; no interactive computer use"
+}

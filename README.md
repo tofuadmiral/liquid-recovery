@@ -2,7 +2,7 @@
 
 A product concept for an embedded recovery assistant on packaging machines, by Fuad Ali.
 
-[Read the two page memo](site/memo.pdf) · [Editable memo](output/memo.md) · [Public evidence](EVIDENCE.md)
+[Live replay](https://liquid-recovery.vercel.app/) · [Read the two page memo](https://liquid-recovery.vercel.app/memo.pdf) · [Editable memo](output/memo.md) · [Public evidence](EVIDENCE.md)
 
 The replay shows why the same alarm can need a different next step when the incident history changes. Every machine, alarm and procedure is synthetic. The website displays recorded local inference. It does not run a model in your browser or connect to a machine.
 
