@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-03T02:01:39.505327+00:00",
+  "verified_at": "2026-11-03T02:28:56.507328+00:00",
   "repo": "https://github.com/tofuadmiral/liquid-recovery",
   "visibility": "public",
   "site": "https://liquid-recovery.vercel.app/",
@@ -8,9 +8,12 @@
   "memo_http": 200,
   "memo_pages": 2,
   "public_bytes_match_local": true,
-  "deployed_commit": "6676654d2ff2ccae238fb14ac17da6903b0993f0",
-  "site_sha256": "1d08e927408b5bab1bf1cb9813448c96f6429fdd54e4d8d4d0a50f3e5922352d",
-  "memo_sha256": "cc9056ea7206d287b65d65b83c9a28fc42400fd3054357af7c68364fe70d1e69",
-  "verification": "Public HTTP content and hashes. Revised memo rendered and visually verified as two pages. Replay bytes unchanged from the previously tested version.",
-  "assignment_review": "Full assignment text supplied by user and reviewed adversarially; material gaps incorporated"
+  "deployed_commit": "b60062be3130af8b171fe9308b07aac41daf0c45",
+  "site_sha256": "c4146cfa6b82255542ebb181227a5b96f8029b48385980f51a2253848c4f74d2",
+  "memo_sha256": "f1893a4616295f0770dd24b0549dddb3840ca96fe874c9f73e738b83dc4fc1f4",
+  "verification": "Public HTML and PDF match the tested local files. Live HTML passed all 72 case and method combinations and story controls. Headless Chrome verified playback, evidence links, mobile layout, reduced motion and memo access. Two page memo rendered and visually checked.",
+  "assignment_review": "Full assignment text supplied by user and reviewed adversarially; material gaps incorporated",
+  "deployment_id": "dpl_2FMKGmJrUrVRPqMWymUsgsnhB73A",
+  "deployment_url": "https://liquid-recovery-pte7ug7qj-tofuadmirals-projects.vercel.app",
+  "long_term_notes": "https://github.com/tofuadmiral/liquid-recovery/blob/main/docs/long-term-value.md"
 }

@@ -2,4 +2,4 @@
 > liquid-recovery-replay@1.0.0 test
 > node tests/ui.test.cjs
 
-Passed 408 case/method render combinations, source targets, tabs, case navigation, untrusted text rendering and isolated outcome storage.
+Passed 72 case and method combinations, all story states, playback controls, evidence targets, tabs, untrusted text rendering and local outcome storage.
