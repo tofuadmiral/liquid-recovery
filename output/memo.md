@@ -1,65 +1,67 @@
-RECOVERY  /  A PRODUCT BET FOR LIQUID AI  /  FUAD ALI
+LIQUID AI  /  PRODUCT PROPOSAL  /  FUAD ALI
 
-## Give every machine a clearer next step.
+## Recovery for packaging machines
 
-I would build Recovery, a local assistant that helps operators work through recurring packaging stops using the machine maker’s own procedures. Sell it to the OEM as a service capability it can ship across its installed base.
+An operator switches products. The machine stops, they check the product settings, and it stops again with the same alarm. I would build Recovery to show the next useful check using the manufacturer’s instructions and what the operator already tried. The equipment maker’s service team would buy it.
 
-### Start where support work repeats
+### The first customer and problem
 
-* **The moment:** an operator changes a case packer to a new product. It keeps stopping. The screen repeats an alarm, while the service specialist has to reconstruct the history and ask which checks already failed.
+* Start with one family of case packing machines, without robots, and two common stops after a product change. The first user is an operator or maintenance technician who needs to know which check to try next and when to call service.
 
-* **Start with packaging before consumer assistants.** Repeated machine designs, identifiable procedure owners and an existing service budget give us a narrow workflow to qualify. Sell to the service leader carrying included or warranty support; controls engineering integrates. Begin with one nonrobotic side load family and two recurring stop types.
+* I would choose packaging before consumer assistants because we can look for a repeated machine design, someone responsible for the instructions, and a service team already spending money on the problem. I would target manufacturers that pay for substantial warranty or included support.
 
-### Make the next step easier to trust
+### What the operator sees
 
-* **Read the whole incident.** Bring together recent machine events, the operator’s observations and attempted checks. Find the procedure for that machine and software version.
+* Recovery shows one check from the manufacturer’s instructions and the events that explain why it applies. It remembers completed checks so the operator can move on to the next one.
 
-* **Give one useful response.** Show the original instruction, ask for missing evidence, or escalate with the history attached. Stop sending people through checks they have already tried.
+* If records disagree or information is missing, it asks for clarification. If the checks keep failing, it sends the history to a service specialist.
 
-* **Keep the operator in control.** No automatic resets, parameter changes or invented repairs. Record what the person tried and whether the stop returned.
+* A person performs the check and confirms what happened. Recovery never resets the machine, changes settings or writes repair instructions.
 
-### Why Liquid belongs in the product
+### Why use Liquid
 
-* **Use the model where language varies.** LFM2.5 with 2.6B parameters would turn operator notes into observations the approved workflow can use. Rules choose the response. The pilot must show that handling varied language costs less to maintain than forms and phrase rules.
+* I would start with LFM2.5 with 2.6B parameters to read operator notes. People describe the same problem in different ways. The model turns those notes into facts; ordinary software chooses the next approved check. If forms and simple rules do the job with less upkeep, we should use them.
 
-* **Useful at the machine.** Local inference can keep the workflow available without an external connection. Start on an existing industrial PC only if measured spare capacity allows it. Compare the cost with a plant server and cloud before choosing hardware.
+* Running on the machine’s existing computer could keep the assistant available without internet access. We would first check available memory and performance, then compare the cost with a shared factory server or cloud service.
 
-### The larger opportunity
+### The first eight weeks
 
-* **Improve with every approved release.** Review failed recoveries with the OEM, add confirmed outcomes to its test cases, and ship validated improvements to procedures and note interpretation. Expand to adjacent equipment after a second OEM deploys economically.
+* Use the first two weeks to review support cases and agree on instructions. Connect the data in weeks three and four. Let service staff review recommendations in weeks five and six, then try supervised use on two machines. Two engineers build it; I lead customer research and measure the results.
 
-Evidence gate: the replay changed the design. The model interprets notes; rules select the response. Full results retain the failures. Consistent interpretation on real incidents, hardware fit and customer savings remain unproved. [Inspect the replay and results](https://github.com/tofuadmiral/liquid-recovery). Model fit: [Liquid model card](https://huggingface.co/LiquidAI/LFM2.5-2.6B).
+* The target is 25% less specialist time per relevant support case. We need to show that saving before expanding to more machines.
+
+The demo uses invented incidents. The assistant and rules alone both passed 24 examples, so the test does not establish a need for the model. Customer savings and factory hardware performance still need testing. [Demo and results](https://liquid-recovery.vercel.app/) · [Liquid model card](https://huggingface.co/LiquidAI/LFM2.5-2.6B).
 
 <!-- page break -->
 
-THE BUSINESS  /  FROM ONE MACHINE FAMILY TO A REPEATABLE PRODUCT
+RECOVERY  /  CUSTOMERS AND LONG TERM VALUE
 
-## Sell through the OEM. Earn the renewal.
+## Customers and long term value
 
-Recovery would be an OEM’s first purchase from Liquid, funded from its service budget. The OEM owns the plant relationship and can bundle Recovery into service contracts. Expansion depends on repeated deployment and measurable support savings.
+The service leader at an equipment manufacturer would buy Recovery from the service budget. This would be their first purchase from Liquid. They could include it in the support contracts they already sell to factories.
 
-### Charge for a result the buyer can capture
+### Finding customers and testing the price
 
-* **Test the price:** $20K for an eight week pilot, credited against year one. Production starts at $30K per OEM each year plus $300 per enabled machine. Scope new machine families separately.
+* Start with Douglas and Massman through industry introductions and PMMI, the packaging industry association. Ask each for 20 recent support cases and access to two customer plants. Recruit ten people across service, engineering, maintenance and operating shifts. These are prospects; I have not validated demand.
 
-* **Require a buyer return:** at 200 machines, the annual price is $90K. Target at least $180K in annual value after deployment and upkeep, through support capacity, avoided OEM travel or service margin. Four calls per machine, 20 minutes saved and $100 per hour yield only $26.7K. That account fails qualification.
+* Test a $20K eight week pilot, credited against the first year. Then charge $30K per manufacturer each year plus $300 per machine. At 200 machines, that is $90K a year.
 
-### Win the first ten users, then the next OEM
+* I would look for at least $180K in yearly value after setup and upkeep, from saved support time, avoided travel or added service profit. Four calls per machine, 20 minutes saved and $100 per hour produce only $26.7K. That customer would not justify the price.
 
-* **Reach service leaders at Douglas and Massman** through industry introductions and PMMI contacts. Ask each for 20 recent support cases and access to two customer plants. Recruit ten users across service, controls, maintenance and operating shifts. These are research targets; no demand is validated.
+### How the value grows over time
 
-* **Prove repetition early.** Keep the app, validation and updates common; configure machine data and procedures. The OEM approves procedures; we own releases. A second machine needs configuration only. Target ten engineering days for a second OEM after access, counting OEM preparation too. Customer knowledge stays isolated.
+* Each machine builds a history of its software version, product settings, alarms, attempted checks and confirmed outcomes. Service engineers review recurring problems and improve the instructions and the examples used to interpret notes. The next operator starts with that knowledge.
 
-### Build value that survives interchangeable models
+* Those past cases also become tests that every update must pass. Over time, replacing Recovery would mean rebuilding and checking that machine knowledge. Customers would own and be able to export their records. We would keep their service knowledge separate.
 
-* **Win on deployment and upkeep.** SOMIC, Pearson, Beckhoff and ei³ already offer relevant diagnostics or assistance. Test whether Recovery can deliver a bounded workflow with less integration work. Validated mappings, procedure compatibility and dependable updates must drive renewal.
+* If models become interchangeable, customers would still pay for accurate machine connections, current instructions and updates they can trust. SOMIC, Pearson, Beckhoff and ei³ already offer relevant support tools. We have to show that ours takes less work to set up and maintain.
 
-* **Size the path honestly.** Ten OEMs with 200 machines each imply $900K ARR. Fifty with 500 machines imply $9M. These are pricing scenarios, with expansion assumed. The eligible account count still needs research.
+### Growing beyond the first customer
 
-### Make an eight week investment decision
+* Reuse the app, testing tools and update process. Change the machine connections and instructions for each manufacturer. A second machine should only need its data and instructions added. A second manufacturer must fit ten engineering days after access is ready, counting their preparation too. Expand to other equipment only after that works.
 
-* **Run a gated pilot.** Two engineers own integration and workflow; I own discovery, labels and economics. Qualify in weeks one and two, integrate in three and four, shadow in five and six, then test supervised use and replication. Target 25% fewer specialist minutes per eligible incident.
+* Ten manufacturers with 200 machines each would bring in $900K a year. Fifty with 500 machines would bring in $9M. These are scenarios based on the proposed price. I still need to establish how many buyers fit.
 
-* **Stop when the case fails.** No usable history or procedure owner by week two; persistent unsupported selections; rules with lower upkeep; weak savings; hardware that breaks the economics; a second OEM exceeding ten engineering days; or buyers who reject production pricing after seeing value.
+* I would stop if we cannot get usable records or someone responsible for the instructions by week two, recommendations remain unreliable, support time does not fall, setup exceeds the time limit, hardware removes the savings, or buyers reject the price after seeing results.
 
-Sources: [Douglas](https://www.douglas-machine.com/products-solutions/case-and-tray-packers/), [Massman](https://massmanautomation.com/applications/cans-bottles/), [SOMIC](https://us.somic-packaging.com/service/digital-services/), [Pearson](https://pearsonpkg.com/technical-service/remote-service-support/), [Beckhoff](https://www.beckhoff.com/en-au/products/automation/twincat-projects-with-ai-supported-engineering/), [ei³](https://ei3.com/platform/iiot-feature/connected-ai). Availability differs by offering. AI assistance: Codex supported research, code, evaluation and writing under my direction. I will present the argument and its limits.
+Public sources: [Douglas](https://www.douglas-machine.com/products-solutions/case-and-tray-packers/), [Massman](https://massmanautomation.com/applications/cans-bottles/), [SOMIC](https://us.somic-packaging.com/service/digital-services/), [Pearson](https://pearsonpkg.com/technical-service/remote-service-support/), [Beckhoff](https://www.beckhoff.com/en-au/products/automation/twincat-projects-with-ai-supported-engineering/), [ei³](https://ei3.com/platform/iiot-feature/connected-ai). Capabilities vary by product. Codex helped with research, code, testing and writing under my direction.

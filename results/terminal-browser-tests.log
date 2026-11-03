@@ -1,0 +1,5 @@
+
+> liquid-recovery-replay@1.0.0 test:browser
+> node tests/terminal.browser.cjs
+
+{"passed":true,"checks":["Recorded story advances and pauses","Paired cases change the next step","Case and method navigation","Evidence links open records","Results visible","Memo reachable","No horizontal overflow at 390, 768 and 1440 pixels","Reduced motion respected","No browser script errors"],"screenshots":["terminal-desktop.png","terminal-check.png","terminal-results.png","terminal-mobile.png"]}

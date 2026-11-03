@@ -1,73 +1,71 @@
 # Recovery
 
-A product concept for an embedded recovery assistant on packaging machines, by Fuad Ali.
+A packaging machine stops after a product change. The operator checks the recipe, but the same alarm returns. Recovery uses the machine history and the manufacturer's instructions to show the next useful check.
 
-[Live replay](https://liquid-recovery.vercel.app/) · [Read the two page memo](https://liquid-recovery.vercel.app/memo.pdf) · [Editable memo](output/memo.md) · [Public evidence](EVIDENCE.md)
+[Open the demo](https://liquid-recovery.vercel.app/) · [Read the memo](https://liquid-recovery.vercel.app/memo.pdf) · [Long term value](docs/long-term-value.md)
 
-The replay shows why the same alarm can need a different next step when the incident history changes. Every machine, alarm and procedure is synthetic. The website displays recorded local inference. It does not run a model in your browser or connect to a machine.
+The demo opens with a short illustrated story. Play it or move through the steps yourself. You can also inspect all 24 synthetic incidents and compare the recorded results.
 
-## Product idea
+## What it does
 
-* Sell to an OEM that carries substantial included support costs.
-* Start with one case packer family and recurring stops after a changeover.
-* Show the procedure instruction, ask for missing evidence, or escalate with the history attached.
-* Keep resets, parameter writes, motion and generated repairs outside the product.
-* Earn expansion through repeatable deployment and measurable support savings.
+* Reads machine events, operator notes and checks already attempted.
+* Shows a check from the matching procedure, asks for missing information, or refers the case to service.
+* Leaves the person in control. There is no machine connection, reset, parameter change or generated repair instruction.
 
-## What works and what remains open
+LFM2.5 with 2.6B parameters reads the operator note. Rules use the extracted observations and machine history to choose the next step. The website displays saved local runs. Playback does not call a model, and animation timing is illustrative.
 
-The original direct model selection experiment failed to deliver usable answers on its 24 held out cases. Those results remain unchanged and inspectable. Repairs to the answer format alone did not make the decisions reliable.
+## What the test shows
 
-The revised design gives LFM a narrower job: extract observations from the operator note. A deterministic procedure tree then selects the response. Hybrid results describe that complete pipeline, not model action selection accuracy. The fresh evaluation uses 24 new combinations under the same synthetic policy. The model must still justify its maintenance cost against rules on independently labeled real incidents.
+The assistant passed all 24 fresh synthetic cases, including the expected supporting evidence. Rules alone also passed all 24. The model extracted the expected observations in 24 of 24 notes. The median model call took 8.46 seconds on an Apple M4 Pro.
 
-Buyer demand, industrial hardware compatibility, deployment effort and support savings are unproved. The pricing and pilot described in the memo are hypotheses.
+This shows that the bounded workflow works on these examples. It does not establish that the model is needed, that factories would save money, or that the system would work on their hardware. One author created the mock policy, examples and labels. The rule baseline already understands the wording used in the notes.
 
-## Open the artifact
+All machines, alarms and instructions are invented. No manufacturer approved these procedures.
 
-Open `output/replay.html` directly for an offline walkthrough, or serve `site/` with any static web server. The memo is linked from the replay header and footer. Local demonstration outcomes stay in your browser and never modify evaluation results.
+## How the value could grow
+
+Each machine would accumulate reviewed service history: the product settings and software version, what the operator tried, and what a person confirmed afterward. Service staff could use recurring incidents to improve instructions and note interpretation.
+
+Those incidents would also become tests for future updates. The useful asset is machine knowledge that has been reviewed and tested as the equipment changes. Customers would own and be able to export their records. Their service knowledge would stay separate.
+
+The [long term value notes](docs/long-term-value.md) explain what could make this harder to replace and what would disprove that argument.
+
+## Run the demo
+
+Open `output/replay.html` directly, or serve the website locally:
 
 ```sh
 python3 -m http.server 8080 --directory site
 ```
 
-## Reproduce local inference
+The public site is static. It requires no API key, database or model download. Demonstration outcomes are stored only in the current browser.
 
-The recorded hardware is an Apple M4 Pro with 24 GB unified memory. MLX requires Apple Silicon. The source contains no model weights.
+## Reproduce the evaluation
+
+MLX inference requires an Apple Silicon Mac. The pinned model revision and runtime versions are in `results/hybrid-final/metadata.json`. No model weights are included.
 
 ```sh
 uv venv --python 3.12 .venv
 uv pip install --python .venv/bin/python -r requirements.lock
 .venv/bin/python reproduce.py --prepare
-# Fresh directory required; never overwrite a recorded result.
 .venv/bin/python evaluate_hybrid.py --split correction-heldout --name hybrid-reproduction --model
-# Reproduce the original frozen experiment separately.
-.venv/bin/python evaluate.py --split heldout --name original-reproduction --model
 ```
 
-`reproduce.py` downloads the pinned official checkpoint and adds its local cache path to `results/model.json`. Keep that local path out of published commits. Both frozen evaluators verify their code, prompts and cases before the held out run. Models receive incident evidence, never case labels.
+Use a new result directory for each run. The evaluator verifies the frozen code, prompt and cases before the run. Models receive evidence, never expected answers. The preparation command writes a local cache path to `results/model.json`; keep that path out of published commits.
 
-## Verify and inspect
+## Inspect or verify
+
+* `data/correction-heldout.json` contains the evaluated incidents and explicit labels.
+* `hybrid_adapter.py` reads model observations and passes them to the procedure rules.
+* `engine.py` contains the rules, eligibility checks and scoring.
+* `results/hybrid-final/` contains every response, summary and runtime detail.
+* `results/hybrid-freeze.json` records the code and data hashes before evaluation.
+* `EVIDENCE.md` links the public sources behind the product proposal.
 
 ```sh
-.venv/bin/python -m unittest discover -s tests -v
 npm ci
 npm test
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
-* `results/EXPERIMENT.md` preserves the original interpretation and complete failure counts.
-* `results/CORRECTION.md` explains the correction, changed model role and fresh results.
-* `results/heldout-final/` contains the original raw responses, summaries and metadata.
-* `results/hybrid-final/` contains the fresh hybrid evaluation.
-* `results/freeze.json` and `results/hybrid-freeze.json` pin the two experiments.
-* `engine.py` owns the procedure tree, eligibility checks, scoring and shared arithmetic.
-* `hybrid_adapter.py` parses model observations and passes them to the procedure tree.
-* `data/` contains explicit labels and supporting sources. Pairs remain within a split.
-* `docs/original-protocol.md` preserves the original methodology and metric definitions.
-
-All diagnostic runs are retained. The same author created the synthetic policy, labels and baseline. This is a bounded replay test, not an independent industrial benchmark. Valid evidence IDs are not a general factual entailment test. MLX allocation and process memory overlap and must not be added.
-
-## Deployment
-
-Vercel serves the static `site/` directory. No server inference, API keys, database, customer records or model weights are required. Public materials contain synthetic data and public research only. Confidential interview notes are excluded.
-
-AI assistance: Codex supported research, code, evaluation and writing under Fuad's direction. Fuad will present the argument and its limits. Third party model and runtime licenses retain their original terms.
+Vercel serves `site/`. The repository contains synthetic data and public research. Confidential interview notes are excluded. Codex helped with research, code, testing and writing under Fuad's direction. Third party model and runtime licenses retain their original terms.
