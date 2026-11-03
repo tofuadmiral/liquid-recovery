@@ -1,0 +1,24 @@
+{
+  "created_at": "2026-11-03T01:46:35.608096+00:00",
+  "sha256": {
+    "engine.py": "d89f1161018fa847fedd1bef2920f24b8b2ce7443f577f541c4655a7622db63d",
+    "evaluate_hybrid.py": "7e1a38b1115c81b83e6175c3682b5795e617e746dc8064447bf4cfb1459a7cbe",
+    "hybrid_adapter.py": "00550fdf112f21654025a61dfaf48769f4267177e6fd14fe2c1b63840b2a8e6d",
+    "prompts/extract.txt": "cecdfaf0f89c986d65dfebd8efe6945c66fc8d88f6a8c02be3458f73ec3de410",
+    "data/procedures.json": "3378ef4751095c3c0298a32ba0a847d7177ad3253802b021b54dd9c0db917c67",
+    "data/dev.json": "a15179ea2c1716d870dc2a6e6abdbf7726bae3dae270ab502e1439a7dd313a66",
+    "data/correction-heldout.json": "70fb0eb1cee57565f9a0f5fd39ad29b2e240810f6702b71153467089ad15fe08"
+  },
+  "config": {
+    "temperature": 0.1,
+    "top_k": 50,
+    "max_tokens": 1024,
+    "context_budget": 8192,
+    "timeout_seconds": 60,
+    "seed": 17,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 256,
+    "reasoning_prefill": ""
+  },
+  "development_process": "Original failure and all corrective direct selection probes retained. Separate hybrid design uses model note extraction and deterministic procedure selection. Two full hybrid development runs. The revision restores the native reasoning template and raises the output budget; fresh holdout frozen afterward."
+}

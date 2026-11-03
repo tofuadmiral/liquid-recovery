@@ -1,0 +1,23 @@
+{
+  "heldout_rows": 96,
+  "conditions": 4,
+  "scenarios": {
+    "development": 12,
+    "heldout": 24
+  },
+  "python_contract_tests": 10,
+  "dom_case_method_combinations": 192,
+  "pdf_pages": 2,
+  "page_word_counts": [
+    467,
+    554
+  ],
+  "pdf_visual_review": "Both final rendered PNG pages inspected; no clipping, overlap or missing glyphs observed.",
+  "memo_prose_style": "No em dash, en dash, hyphen or parentheses in extracted visible text.",
+  "frozen_inputs_verified": true,
+  "freeze_created_at": "2026-11-03T00:27:41.548206+00:00",
+  "pdf_sha256": "1ad97f3c2826291663addc74ffe668697b6d28a77d4975dca919f89ed8f7b0f5",
+  "html_sha256": "8bd1cd1ec9615d81d668c13cd7cfe124f6f7fd8b8cd143f21db8edb60469267a",
+  "browser_verification": "Development viewer visually inspected in Chrome; incident navigation and method selection verified. Final viewer verified by isolated DOM tests without further computer use.",
+  "limitations": "Synthetic self-authored cases. No production or industrial-PC validation. Model failures describe the frozen harness and budget. No customer interviews or outreach."
+}

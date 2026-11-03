@@ -1,0 +1,174 @@
+F01a alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+F01a decision_tree: C_SETUP gold=C_SETUP correct=True 0.000s
+Model loaded: 0.95 s
+F01a lfm_full: C_SETUP gold=C_SETUP correct=True 8.406s
+F01b alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+F01b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+F01b lfm_full: C_OBSERVE gold=C_OBSERVE correct=True 8.233s
+F02a alarm_lookup: C_OBSERVE gold=E_SERVICE correct=False 0.000s
+F02a decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+F02a lfm_full: E_SERVICE gold=E_SERVICE correct=True 8.354s
+F02b alarm_lookup: C_OBSERVE gold=E_REPEAT correct=False 0.000s
+F02b decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+F02b lfm_full: E_REPEAT gold=E_REPEAT correct=True 8.233s
+F03a alarm_lookup: C_RECIPE gold=C_RECIPE correct=True 0.000s
+F03a decision_tree: C_RECIPE gold=C_RECIPE correct=True 0.000s
+F03a lfm_full: C_RECIPE gold=C_RECIPE correct=True 8.275s
+F03b alarm_lookup: C_RECIPE gold=E_SERVICE correct=False 0.000s
+F03b decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+F03b lfm_full: E_SERVICE gold=E_SERVICE correct=True 8.489s
+F04a alarm_lookup: C_OBSERVE gold=Q_CONFLICT correct=False 0.000s
+F04a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+F04a lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 9.565s
+F04b alarm_lookup: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+F04b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+F04b lfm_full: C_OBSERVE gold=C_OBSERVE correct=True 9.010s
+F05a alarm_lookup: C_RECIPE gold=Q_RECIPE correct=False 0.000s
+F05a decision_tree: Q_RECIPE gold=Q_RECIPE correct=True 0.000s
+F05a lfm_full: Q_RECIPE gold=Q_RECIPE correct=True 8.364s
+F05b alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+F05b decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+F05b lfm_full: Q_FRESH gold=Q_FRESH correct=True 8.335s
+F06a alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+F06a decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+F06a lfm_full: E_VERSION gold=E_VERSION correct=True 8.433s
+F06b alarm_lookup: C_RECIPE gold=E_REPEAT correct=False 0.000s
+F06b decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+F06b lfm_full: E_REPEAT gold=E_REPEAT correct=True 8.583s
+F07a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+F07a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+F07a lfm_full: Q_FRESH gold=Q_FRESH correct=True 8.672s
+F07b alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+F07b decision_tree: C_SETUP gold=C_SETUP correct=True 0.000s
+F07b lfm_full: C_SETUP gold=C_SETUP correct=True 10.965s
+F08a alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+F08a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+F08a lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 9.887s
+F08b alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+F08b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+F08b lfm_full: C_OBSERVE gold=C_OBSERVE correct=True 10.054s
+F09a alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+F09a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+F09a lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 8.688s
+F09b alarm_lookup: C_RECIPE gold=E_REPEAT correct=False 0.000s
+F09b decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+F09b lfm_full: E_REPEAT gold=E_REPEAT correct=True 8.296s
+F10a alarm_lookup: C_OBSERVE gold=Q_OUTCOME correct=False 0.000s
+F10a decision_tree: Q_OUTCOME gold=Q_OUTCOME correct=True 0.000s
+F10a lfm_full: Q_OUTCOME gold=Q_OUTCOME correct=True 8.424s
+F10b alarm_lookup: C_OBSERVE gold=E_SERVICE correct=False 0.000s
+F10b decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+F10b lfm_full: E_SERVICE gold=E_SERVICE correct=True 9.145s
+F11a alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+F11a decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+F11a lfm_full: E_UNKNOWN gold=E_UNKNOWN correct=True 9.758s
+F11b alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+F11b decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+F11b lfm_full: E_UNKNOWN gold=E_UNKNOWN correct=True 7.531s
+F12a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+F12a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+F12a lfm_full: Q_FRESH gold=Q_FRESH correct=True 8.111s
+F12b alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+F12b decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+F12b lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 8.504s
+{
+  "alarm_lookup": {
+    "n": 24,
+    "correct": 4,
+    "delivered_correct": 4,
+    "passed": 4,
+    "valid_evidence_refs": 24,
+    "complete_gold_evidence": 4,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 20,
+    "valid_response": 11,
+    "escalations_required": 9,
+    "appropriate_escalations": 2,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 1.6978999155981e-05,
+    "latency_p95_seconds": 3.683400063891895e-05,
+    "latency_max_seconds": 3.724999987753108e-05,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": [
+      "F01a",
+      "F01b",
+      "F02a",
+      "F02b",
+      "F03b",
+      "F04a",
+      "F05a",
+      "F05b",
+      "F06a",
+      "F06b",
+      "F07a",
+      "F07b",
+      "F08a",
+      "F08b",
+      "F09a",
+      "F09b",
+      "F10a",
+      "F10b",
+      "F12a",
+      "F12b"
+    ]
+  },
+  "decision_tree": {
+    "n": 24,
+    "correct": 24,
+    "delivered_correct": 24,
+    "passed": 24,
+    "valid_evidence_refs": 24,
+    "complete_gold_evidence": 24,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 24,
+    "escalations_required": 9,
+    "appropriate_escalations": 9,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 3.3207998967554886e-05,
+    "latency_p95_seconds": 0.0001359169982606545,
+    "latency_max_seconds": 0.00028120900060457643,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": []
+  },
+  "lfm_full": {
+    "n": 24,
+    "correct": 24,
+    "delivered_correct": 24,
+    "passed": 24,
+    "valid_evidence_refs": 24,
+    "complete_gold_evidence": 24,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 24,
+    "escalations_required": 9,
+    "appropriate_escalations": 9,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 8.461035999999694,
+    "latency_p95_seconds": 10.054169666000234,
+    "latency_max_seconds": 10.965239958999518,
+    "mlx_peak_bytes": 2109938740,
+    "rss_peak_sampled_bytes": 2055864320,
+    "prompt_tokens_range": [
+      216,
+      228
+    ],
+    "failure_ids": []
+  }
+}

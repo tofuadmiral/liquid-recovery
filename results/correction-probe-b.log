@@ -1,0 +1,39 @@
+D01a 2.1799043329992855 stop ```json
+{
+  "action_id": "Q_FRESH",
+  "evidence_ids": [
+    "S0",
+    "H0"
+  ]
+}
+```
+D01b 2.218055999999706 stop ```json
+{
+  "action_id": "Q_FRESH",
+  "evidence_ids": [
+    "S0",
+    "H0"
+  ]
+}
+```
+D02a 2.528408958 stop ```json
+{
+  "action_id": "Q_FRESH",
+  "evidence_ids": [
+    "S0",
+    "H0",
+    "A1"
+  ]
+}
+```
+D02b 2.6487922910000634 stop ```json
+{
+  "action_id": "Q_FRESH",
+  "evidence_ids": [
+    "S0",
+    "H0",
+    "A1",
+    "A2"
+  ]
+}
+```

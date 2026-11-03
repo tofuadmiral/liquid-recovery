@@ -1,0 +1,1 @@
+{"name":"liquid-recovery-replay","version":"1.0.0","private":true,"scripts":{"test":"node tests/ui.test.cjs"},"devDependencies":{"jsdom":"29.0.1"}}

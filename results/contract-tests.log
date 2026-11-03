@@ -1,0 +1,21 @@
+test_allowed_but_wrong_not_hidden_by_guard (test_contracts.ContractTests.test_allowed_but_wrong_not_hidden_by_guard) ... ok
+test_correct_control (test_contracts.ContractTests.test_correct_control) ... ok
+test_current_ablation_really_omits_observations (test_contracts.ContractTests.test_current_ablation_really_omits_observations) ... ok
+test_extra_assertion_rejected (test_contracts.ContractTests.test_extra_assertion_rejected) ... ok
+test_negated_attempt_not_treated_as_completed (test_contracts.ContractTests.test_negated_attempt_not_treated_as_completed) ... ok
+test_parser_does_not_use_reasoning_json (test_contracts.ContractTests.test_parser_does_not_use_reasoning_json) ... ok
+test_procedure_version_and_exhaustion (test_contracts.ContractTests.test_procedure_version_and_exhaustion) ... ok
+test_split_integrity_and_evidence (test_contracts.ContractTests.test_split_integrity_and_evidence) ... ok
+test_unknown_action_and_fabricated_reference_rejected (test_contracts.ContractTests.test_unknown_action_and_fabricated_reference_rejected) ... ok
+test_wrong_evidence_does_not_pass (test_contracts.ContractTests.test_wrong_evidence_does_not_pass) ... ok
+test_conflicting_recipe_requires_both_sources (test_hybrid.HybridContractTests.test_conflicting_recipe_requires_both_sources) ... ok
+test_extra_prose_or_fields_rejected (test_hybrid.HybridContractTests.test_extra_prose_or_fields_rejected) ... ok
+test_extracted_observation_cannot_override_version (test_hybrid.HybridContractTests.test_extracted_observation_cannot_override_version) ... ok
+test_no_observation_keeps_policy_step (test_hybrid.HybridContractTests.test_no_observation_keeps_policy_step) ... ok
+test_unknown_and_duplicate_checks_fail_closed (test_hybrid.HybridContractTests.test_unknown_and_duplicate_checks_fail_closed) ... ok
+test_unobserved_recipe_is_rejected (test_hybrid.HybridContractTests.test_unobserved_recipe_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.004s
+
+OK

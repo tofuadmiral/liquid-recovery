@@ -1,0 +1,186 @@
+D01a alarm_lookup: C_RECIPE gold=C_RECIPE correct=True 0.000s
+D01a decision_tree: C_RECIPE gold=C_RECIPE correct=True 0.000s
+Model loaded: 0.76 s
+D01a lfm_current: Q_FRESH gold=C_RECIPE correct=False 1.373s
+D01a lfm_full: Q_FRESH gold=C_RECIPE correct=False 1.328s
+D01b alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+D01b decision_tree: C_SETUP gold=C_SETUP correct=True 0.001s
+D01b lfm_full: Q_FRESH gold=C_SETUP correct=False 1.408s
+D01b lfm_current: Q_FRESH gold=C_SETUP correct=False 1.358s
+D02a alarm_lookup: C_RECIPE gold=E_SERVICE correct=False 0.000s
+D02a decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+D02a lfm_current: Q_FRESH gold=E_SERVICE correct=False 1.401s
+D02a lfm_full: Q_FRESH gold=E_SERVICE correct=False 1.422s
+D02b alarm_lookup: C_RECIPE gold=E_REPEAT correct=False 0.000s
+D02b decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+D02b lfm_full: Q_FRESH gold=E_REPEAT correct=False 1.539s
+D02b lfm_current: Q_FRESH gold=E_REPEAT correct=False 1.191s
+D03a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+D03a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+D03a lfm_current: Q_FRESH gold=Q_FRESH correct=True 1.174s
+D03a lfm_full: Q_FRESH gold=Q_FRESH correct=True 1.384s
+D03b alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+D03b decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+D03b lfm_full: Q_FRESH gold=Q_FRESH correct=True 1.397s
+D03b lfm_current: Q_FRESH gold=Q_FRESH correct=True 1.309s
+D04a alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+D04a decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+D04a lfm_current: Q_FRESH gold=E_VERSION correct=False 1.214s
+D04a lfm_full: Q_FRESH gold=E_VERSION correct=False 1.354s
+D04b alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+D04b decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+D04b lfm_full: Q_FRESH gold=E_VERSION correct=False 1.628s
+D04b lfm_current: Q_FRESH gold=E_VERSION correct=False 1.367s
+D05a alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+D05a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.001s
+D05a lfm_current: Q_FRESH gold=Q_CONFLICT correct=False 1.302s
+D05a lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 2.555s
+D05b alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+D05b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+D05b lfm_full: Q_FRESH gold=C_OBSERVE correct=False 1.776s
+D05b lfm_current: Q_FRESH gold=C_OBSERVE correct=False 1.519s
+D06a alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06a decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06a lfm_current: Q_FRESH gold=E_UNKNOWN correct=False 1.478s
+D06a lfm_full: Q_FRESH gold=E_UNKNOWN correct=False 1.549s
+D06b alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06b decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06b lfm_full: Q_FRESH gold=E_UNKNOWN correct=False 1.583s
+D06b lfm_current: Q_FRESH gold=E_UNKNOWN correct=False 1.511s
+{
+  "alarm_lookup": {
+    "n": 12,
+    "correct": 3,
+    "delivered_correct": 3,
+    "passed": 3,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 3,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 9,
+    "valid_response": 6,
+    "escalations_required": 6,
+    "appropriate_escalations": 2,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 1.514550058345776e-05,
+    "latency_p95_seconds": 3.3749998692655936e-05,
+    "latency_max_seconds": 3.3749998692655936e-05,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": [
+      "D01b",
+      "D02a",
+      "D02b",
+      "D03a",
+      "D03b",
+      "D04a",
+      "D04b",
+      "D05a",
+      "D05b"
+    ]
+  },
+  "decision_tree": {
+    "n": 12,
+    "correct": 12,
+    "delivered_correct": 12,
+    "passed": 12,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 12,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 6,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 3.770849980355706e-05,
+    "latency_p95_seconds": 0.0011763330003304873,
+    "latency_max_seconds": 0.0011763330003304873,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": []
+  },
+  "lfm_current": {
+    "n": 12,
+    "correct": 2,
+    "delivered_correct": 2,
+    "passed": 2,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 2,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 0,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 1.3622774374998698,
+    "latency_p95_seconds": 1.518856541999412,
+    "latency_max_seconds": 1.518856541999412,
+    "mlx_peak_bytes": 2346140020,
+    "rss_peak_sampled_bytes": 2054537216,
+    "prompt_tokens_range": [
+      573,
+      574
+    ],
+    "failure_ids": [
+      "D01a",
+      "D01b",
+      "D02a",
+      "D02b",
+      "D04a",
+      "D04b",
+      "D05a",
+      "D05b",
+      "D06a",
+      "D06b"
+    ]
+  },
+  "lfm_full": {
+    "n": 12,
+    "correct": 3,
+    "delivered_correct": 3,
+    "passed": 3,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 3,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 0,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 1.4805723330000546,
+    "latency_p95_seconds": 2.5552908749996277,
+    "latency_max_seconds": 2.5552908749996277,
+    "mlx_peak_bytes": 2413109884,
+    "rss_peak_sampled_bytes": 2052554752,
+    "prompt_tokens_range": [
+      632,
+      745
+    ],
+    "failure_ids": [
+      "D01a",
+      "D01b",
+      "D02a",
+      "D02b",
+      "D04a",
+      "D04b",
+      "D05b",
+      "D06a",
+      "D06b"
+    ]
+  }
+}

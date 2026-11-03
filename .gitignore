@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+tmp/
+.DS_Store
+
+node_modules/
+.vercel/
+.env
+.env.*
+*.local.json

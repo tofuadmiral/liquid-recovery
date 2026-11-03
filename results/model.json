@@ -1,0 +1,16 @@
+{
+  "repo": "LiquidAI/LFM2.5-2.6B-MLX-4bit",
+  "revision": "04efa23776ce61ec34ec95ec34c859854c89542b",
+  "download_seconds": 64.83305887499955,
+  "quantization": {
+    "group_size": 64,
+    "bits": 4,
+    "mode": "affine",
+    "model.embed_tokens": {
+      "group_size": 64,
+      "bits": 6,
+      "mode": "affine"
+    }
+  },
+  "model_type": "lfm2"
+}

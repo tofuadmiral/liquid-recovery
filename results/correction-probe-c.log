@@ -1,0 +1,32 @@
+D01a 17.595790082999883 -201: E_UNKNOWN, cite S0. Alarm is SYN-201, so this doesn't apply.
+
+**Rule 5**: If any unresolved_count is at least 2 → E_REPEAT. Unresolved_count is 0, so skip.
+
+**Rule 6**: If state is RUNNING → Q_OUTCOME, cite S0. State is STOPPED, not RUNNING, so skip.
+
+**Rule 7**: If either recipe ID is missing → Q_RECIPE, cite S0. Recipe IDs present (R16, R17).
+
+**Rule 8**: If recipe_relation is DIFFERENT → C_RECIPE if C_RECIPE is absent from attempted_check_ids, otherwise E_SERVICE. Cite S0 and relevant attempt records.
+
+This is key! The recipe_relation is "DIFFERENT". According to Rule 8, since the recipe relation is DIFFERENT, I should consider C_RECIPE if C_RECIPE is absent from attempted_check_ids, otherwise E_SERVICE.
+
+From the history, I can see:
+- H0: an alarm record at 2026-10-01T09:59:50Z with code SYN-201
+-
+D02b 11.719536250000601 <|tool_call_start|>[rule_apply(rule_id='Q_FRESH', evidence_ids=['S0'])]<|tool_call_end|>
+D04a 12.959640208000565 <|tool_call_start|>[rule_apply(rule_id='1', context={'machine': {'id': 'M0', 'family': 'MOCK-SIDELOAD', 'serial': 'SYNTHETIC-001', 'software': '9.0', 'supported': False}, 'snapshot': {'id': 'S0', 'at': '2026-10-01T10:00:00Z', 'quality': 'good', 'state': 'STOPPED', 'alarm': 'SYN-201', 'recipe': 'R17', 'job_recipe': 'R17', 'age_seconds': 0.0, 'usable': True, 'recipe_relation': 'SAME'}, 'current_episode': 'EP-2', 'history': {'available': True, 'usable': True, 'bad_record_ids': [], 'attempted_check_ids': [], 'unresolved_count': 0, 'records': [{'id': 'H0', 'at': '2026-10-01T09:59:50Z', 'episode': 'EP-2', 'quality': 'good', 'kind': 'alarm', 'code': 'SY
+D05b 17.88835362499958 I'll analyze the incident step by step according to the rules provided.
+
+First, let me check the key conditions:
+
+1. **Machine support**: The machine (M0) has `supported: true` → Rule #1 does NOT apply.
+
+2. **Snapshot usability**: S0 shows `usable: true` and `history.usable: true` → Rule #2 does NOT apply.
+
+3. **Recipe disagreement**: The snapshot shows `recipe_relation: "SAME"`, but I need to check if there are conflicting recipe records. Looking at the history, there's an alarm record (H0) and an attempt record (A1 for C_SETUP). The operator notes "The display says recipe R17" which matches the job_recipe and recipe_relation values.
+
+4. **Alarm type**: The alarm is "SYN-201" which matches rule #4 condition (not SYN-201 or SYN-202 exclusion doesn't apply since it IS SYN-201).
+
+5. **State**: The current state is "STOPPED" → Rule #6 applies (if state is RUNNING, use Q_OUTCOME; but here it's STOPPED, not RUNNING).
+
+Wait, let

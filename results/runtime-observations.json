@@ -1,0 +1,7 @@
+{
+  "observed_at_utc": "2026-11-03T00:33:22Z",
+  "power_spot_check": "Battery Power; 100 percent reported at this single observation",
+  "thermal_spot_check": "pmset reported no recorded thermal or performance warning",
+  "control_limit": "Desktop applications remained active. Power and workload were not controlled across the run. No industrial hardware was tested.",
+  "scope": "Supplementary observation, not a whole-run power or thermal measurement"
+}

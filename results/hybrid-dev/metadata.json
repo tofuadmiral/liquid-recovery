@@ -1,0 +1,62 @@
+{
+  "started_at": "2026-11-03T01:41:21.224233+00:00",
+  "ended_at": "2026-11-03T01:41:46.294142+00:00",
+  "split": "dev",
+  "config": {
+    "temperature": 0.1,
+    "top_k": 50,
+    "max_tokens": 256,
+    "context_budget": 8192,
+    "timeout_seconds": 60,
+    "seed": 17,
+    "repetition_penalty": 1.1,
+    "repetition_context_size": 256,
+    "reasoning_prefill": "</think>\n"
+  },
+  "source_hashes": {
+    "engine.py": "d89f1161018fa847fedd1bef2920f24b8b2ce7443f577f541c4655a7622db63d",
+    "evaluate_hybrid.py": "7f1e866eef573fb4ae02f5703e9bd323747f3c68a86cfc1cf835d19c3edf6ada",
+    "hybrid_adapter.py": "00550fdf112f21654025a61dfaf48769f4267177e6fd14fe2c1b63840b2a8e6d",
+    "prompts/extract.txt": "cecdfaf0f89c986d65dfebd8efe6945c66fc8d88f6a8c02be3458f73ec3de410",
+    "data/procedures.json": "3378ef4751095c3c0298a32ba0a847d7177ad3253802b021b54dd9c0db917c67",
+    "data/dev.json": "a15179ea2c1716d870dc2a6e6abdbf7726bae3dae270ab502e1439a7dd313a66",
+    "data/correction-heldout.json": "eadcf118bfb6c109262c945de0de7af38c6ecc102ee0928a7258fa9527e0c889"
+  },
+  "model": {
+    "repo": "LiquidAI/LFM2.5-2.6B-MLX-4bit",
+    "revision": "04efa23776ce61ec34ec95ec34c859854c89542b",
+    "download_seconds": 64.83305887499955,
+    "quantization": {
+      "group_size": 64,
+      "bits": 4,
+      "mode": "affine",
+      "model.embed_tokens": {
+        "group_size": 64,
+        "bits": 6,
+        "mode": "affine"
+      }
+    },
+    "model_type": "lfm2"
+  },
+  "runtime_versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "psutil": "7.2.2"
+  },
+  "hardware": "Apple M4 Pro, 14 CPU cores, 24 GB unified memory",
+  "os": "macOS-26.7.2-arm64-arm-64bit",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "model_loads": [
+    {
+      "ready": true,
+      "load_seconds": 0.8864134159994137,
+      "rss_after_load_bytes": 2029584384,
+      "mlx_active_after_load_bytes": 1583085576
+    }
+  ],
+  "method_order": "alternates LFM order per case; baselines first",
+  "architecture": "hybrid_extraction_rules",
+  "notes": "Model extracts displayed recipe and reported completed checks only. Tree selects the action. Hybrid correctness is not model action selection accuracy. No warm-up; first inference included. No cross-case KV cache. Vendor sampling settings with repetition context 256. Explicit empty reasoning prefill closes the template think block. 256 token answer budget. Two field note extraction JSON. Deterministic tree selects the action using the extracted observations. Invalid extraction fails closed. No constrained decoder or retry. No gold substitution. RSS sampled every 20 ms; MLX peak includes model and tensors, not whole-system RAM. Download excluded. Desktop apps not controlled; no IPC or contention validation."
+}

@@ -1,0 +1,47 @@
+D01a 19.51859295900067 length 
+
+However, I should also consider Q_FRESH - but the snapshot age is 0.0 seconds, so that doesn't apply either.
+
+The most appropriate next step seems to be C_SETUP - read the existing setup-checklist status and its version on the display and record the displayed status. This aligns with the pattern for handling SYN-201 alarms when recipes match.
+
+But wait - let me reconsider. The policy says "For SYN-201 with matching recipes: select C_SETUP if unattempted; then C_OBSERVE if unattempted; otherwise E_SERVICE."
+
+Since there are no attempted checks in the history (attempted_check_ids is empty), C_SETUP would be the first applicable action.
+
+Actually, looking more carefully at the outcomes array being empty, this means no previous actions have been taken. So we're starting fresh.
+
+Given the priorities:
+1. First priority is to follow the procedure order
+2. The machine has an active SYN-201 alarm
+3. The snapshot shows STOPPED state
+
+I believe the correct next action is C_SETUP - to check the current setup checklist status before proceeding.
+
+Let me verify by checking if any other outcome applies:
+- Q_CONFLICT: No conflicting reports found
+- Q_RECIPE: Both recipe IDs are present (R16 and R
+D01b 22.153138875000877 length e only have one history entry (H0) which is an alarm event, not necessarily a failed check attempt.
+
+Wait, let me reconsider. The snapshot shows:
+- state: STOPPED
+- recipe: R17
+- job_recipe: R17
+
+The history shows H0 at 09:59:50Z with alarm SYN-201.
+
+The policy says for SYN-201 with matching recipes (which they are), select C_SETUP if unattempted, then C_OBSERVE if unattempted; otherwise E_SERVICE.
+
+But first I need to determine if any checks have been attempted. The outcomes list is empty, and attempted_check_ids is empty. So no checks have been attempted yet.
+
+However, looking at the priorities more carefully:
+
+**Priority 8**: "For SYN-201 with matching recipes: select C_SETUP if unattempted; then C_OBSERVE if unattempted; otherwise E_SERVICE."
+
+This seems to be the most specific rule for this case. Since:
+- Alarm is SYN-201
+- Recipes match (R17 == R17)
+- No previous check attempts (outcomes=[], attempted_check_ids=[])
+
+I should follow this priority and select C_SETUP first.
+
+But wait - I need to consider what C_SETUP does. It reads the existing setup-checklist status and its version on the display. However, based on the snapshot data, we already know the recipe ID is R17 and job

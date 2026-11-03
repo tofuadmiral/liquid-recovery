@@ -1,0 +1,174 @@
+D01a alarm_lookup: C_RECIPE gold=C_RECIPE correct=True 0.000s
+D01a decision_tree: C_RECIPE gold=C_RECIPE correct=True 0.000s
+Model loaded: 0.67 s
+D01a lfm_current: Q_FRESH gold=C_RECIPE correct=False 6.290s
+D01a lfm_full: C_RECIPE gold=C_RECIPE correct=True 7.105s
+D01b alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+D01b decision_tree: C_SETUP gold=C_SETUP correct=True 0.000s
+D01b lfm_full: C_SETUP gold=C_SETUP correct=True 7.085s
+D01b lfm_current: Q_FRESH gold=C_SETUP correct=False 6.440s
+D02a alarm_lookup: C_RECIPE gold=E_SERVICE correct=False 0.000s
+D02a decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+D02a lfm_current: Q_FRESH gold=E_SERVICE correct=False 6.502s
+D02a lfm_full: E_SERVICE gold=E_SERVICE correct=True 7.320s
+D02b alarm_lookup: C_RECIPE gold=E_REPEAT correct=False 0.000s
+D02b decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+D02b lfm_full: E_REPEAT gold=E_REPEAT correct=True 7.120s
+D02b lfm_current: Q_FRESH gold=E_REPEAT correct=False 7.322s
+D03a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+D03a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+D03a lfm_current: Q_FRESH gold=Q_FRESH correct=True 8.076s
+D03a lfm_full: Q_FRESH gold=Q_FRESH correct=True 10.095s
+D03b alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+D03b decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+D03b lfm_full: Q_FRESH gold=Q_FRESH correct=True 7.357s
+D03b lfm_current: Q_FRESH gold=Q_FRESH correct=True 5.936s
+D04a alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+D04a decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+D04a lfm_current: E_VERSION gold=E_VERSION correct=True 6.615s
+D04a lfm_full: E_VERSION gold=E_VERSION correct=True 8.304s
+D04b alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+D04b decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+D04b lfm_full: E_VERSION gold=E_VERSION correct=True 9.955s
+D04b lfm_current: E_VERSION gold=E_VERSION correct=True 7.957s
+D05a alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+D05a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+D05a lfm_current: Q_FRESH gold=Q_CONFLICT correct=False 7.905s
+D05a lfm_full: Q_CONFLICT gold=Q_CONFLICT correct=True 8.417s
+D05b alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+D05b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+D05b lfm_full: C_OBSERVE gold=C_OBSERVE correct=True 8.655s
+D05b lfm_current: Q_FRESH gold=C_OBSERVE correct=False 7.998s
+D06a alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06a decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06a lfm_current: Q_FRESH gold=E_UNKNOWN correct=False 8.230s
+D06a lfm_full: E_UNKNOWN gold=E_UNKNOWN correct=True 15.644s
+D06b alarm_lookup: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06b decision_tree: E_UNKNOWN gold=E_UNKNOWN correct=True 0.000s
+D06b lfm_full: E_UNKNOWN gold=E_UNKNOWN correct=True 8.623s
+D06b lfm_current: Q_FRESH gold=E_UNKNOWN correct=False 7.969s
+{
+  "alarm_lookup": {
+    "n": 12,
+    "correct": 3,
+    "delivered_correct": 3,
+    "passed": 3,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 3,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 9,
+    "valid_response": 6,
+    "escalations_required": 6,
+    "appropriate_escalations": 2,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 2.1791499420942273e-05,
+    "latency_p95_seconds": 4.516599983617198e-05,
+    "latency_max_seconds": 4.516599983617198e-05,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": [
+      "D01b",
+      "D02a",
+      "D02b",
+      "D03a",
+      "D03b",
+      "D04a",
+      "D04b",
+      "D05a",
+      "D05b"
+    ]
+  },
+  "decision_tree": {
+    "n": 12,
+    "correct": 12,
+    "delivered_correct": 12,
+    "passed": 12,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 12,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 6,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 3.8187499740161e-05,
+    "latency_p95_seconds": 0.0002750000003288733,
+    "latency_max_seconds": 0.0002750000003288733,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": []
+  },
+  "lfm_current": {
+    "n": 12,
+    "correct": 4,
+    "delivered_correct": 4,
+    "passed": 4,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 4,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 2,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 7.613210791500933,
+    "latency_p95_seconds": 8.230136166999728,
+    "latency_max_seconds": 8.230136166999728,
+    "mlx_peak_bytes": 2076255224,
+    "rss_peak_sampled_bytes": 2037891072,
+    "prompt_tokens_range": [
+      209,
+      209
+    ],
+    "failure_ids": [
+      "D01a",
+      "D01b",
+      "D02a",
+      "D02b",
+      "D05a",
+      "D05b",
+      "D06a",
+      "D06b"
+    ]
+  },
+  "lfm_full": {
+    "n": 12,
+    "correct": 12,
+    "delivered_correct": 12,
+    "passed": 12,
+    "valid_evidence_refs": 12,
+    "complete_gold_evidence": 12,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 12,
+    "escalations_required": 6,
+    "appropriate_escalations": 6,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 8.360910436999802,
+    "latency_p95_seconds": 15.644056875000388,
+    "latency_max_seconds": 15.644056875000388,
+    "mlx_peak_bytes": 2106973228,
+    "rss_peak_sampled_bytes": 2037710848,
+    "prompt_tokens_range": [
+      217,
+      226
+    ],
+    "failure_ids": []
+  }
+}

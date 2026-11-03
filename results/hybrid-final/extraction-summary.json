@@ -1,0 +1,6 @@
+{
+  "n": 24,
+  "exact_observation_extraction_correct": 24,
+  "model_selects_action": false,
+  "action_selection": "deterministic procedure tree"
+}

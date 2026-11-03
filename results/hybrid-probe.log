@@ -1,0 +1,85 @@
+D01a 7.23823395799991 stop eck for reported check IDs:
+   - C_SETUP: Read or recorded the setup checklist or status? The note mentions "changeover is finished" which could relate to setup completion, but it's more about the changeover process itself. There's no explicit mention of completing a setup checklist.
+   - C_OBSERVE: Copied or recorded the alarm detail text? No alarm mentioned in this note.
+   - C_RECIPE: Compared the current recipe ID and job recipe ID? No recipe comparison is mentioned.
+
+The note says "Changeover is finished; the machine stopped." This indicates the changeover process was completed successfully (machine stopped). However, none of the three check types are explicitly confirmed as completed based on this note alone.
+
+- C_SETUP: Not explicitly stated that the setup checklist was read/recorded
+- C_OBSERVE: No alarm detail text was copied/recorded
+- C_RECIPE: No recipe ID comparison was made
+
+Since the instructions say "Negated, requested, suggested, quoted or hypothetical checks are not completed checks. Use an empty list if none are reported," I should return an empty list for reported_check_ids.
+
+Wait, let me reconsider. The note says "Changeover is finished" - this implies the setup/configuration work was done. But does this count as C_SETUP being completed? The instruction says "read or recorded the setup checklist or status" - the status could be considered as having been recorded (the changeover is finished). However, typically a setup checklist would need to be specifically referenced.
+
+Given the strict interpretation:
+- displayed_recipe: null (no mention of recipe display)
+- reported_check_ids: [] (no explicit confirmation of any of the three check types)
+
+I'll proceed with this analysis.</think>```json
+{
+  "displayed_recipe": null,
+  "reported_check_ids": []
+}
+```
+D03a 6.9443901249997 stop eck for reported check IDs:
+   - C_SETUP: Read or recorded the setup checklist or status? The note mentions "changeover is finished" which could relate to setup completion, but it's more about the changeover process itself. There's no explicit mention of completing a setup checklist.
+   - C_OBSERVE: Copied or recorded the alarm detail text? No alarm mentioned in this note.
+   - C_RECIPE: Compared the current recipe ID and job recipe ID? No recipe comparison is mentioned.
+
+The note says "Changeover is finished; the machine stopped." This indicates the changeover process was completed successfully (machine stopped). However, none of the three check types are explicitly confirmed as completed based on this note alone.
+
+- C_SETUP: Not explicitly stated that the setup checklist was read/recorded
+- C_OBSERVE: No alarm detail text was copied/recorded
+- C_RECIPE: No recipe ID comparison was made
+
+Since the instructions say "Negated, requested, suggested, quoted or hypothetical checks are not completed checks. Use an empty list if none are reported," I should return an empty list for reported_check_ids.
+
+Wait, let me reconsider. The note says "Changeover is finished" - this implies the setup/configuration work was done. But does this count as C_SETUP being completed? The instruction says "read or recorded the setup checklist or status" - the status could be considered as having been recorded (the changeover is finished). However, typically a setup checklist would need to be specifically referenced.
+
+Given the strict interpretation:
+- displayed_recipe: null (no mention of recipe display)
+- reported_check_ids: [] (no explicit confirmation of any of the three check types)
+
+I'll proceed with this analysis.</think>```json
+{
+  "displayed_recipe": null,
+  "reported_check_ids": []
+}
+```
+D05a 6.8735897919996205 stop  The key points are:
+- The display shows recipe R18
+- This means the recipe is being displayed (so it should be set as displayed_recipe)
+- There are no explicit mentions of C_SETUP, C_OBSERVE, or C_RECIPE checks being completed - these would require the operator to have performed those actions
+
+According to the instructions:
+- displayed_recipe should be "R" followed by digits only if the operator reports that this recipe is displayed on the machine. Here, the operator says "The display says recipe R18" which indicates the recipe IS displayed. So displayed_recipe = "R18"
+- reported_check_ids should list checks the operator explicitly says they already completed: C_SETUP, C_OBSERVE, C_RECIPE. None of these are mentioned in the note, so this should be an empty list []
+
+Let me verify:
+- The note doesn't mention any setup checklist completion → C_SETUP not completed
+- No alarm detail text was copied/recorded → C_OBSERVE not completed  
+- No comparison between current recipe ID and job recipe ID → C_RECIPE not completed
+
+So reported_check_ids should be [] (empty)
+
+The JSON output should be:
+{
+  "displayed_recipe": "R18",
+  "reported_check_ids": []
+}
+
+Wait, I need to check the format more carefully. The instruction says "Set displayed_recipe to an R followed by digits only if the operator reports that this recipe is displayed on the machine."
+
+The phrase "The display says recipe R18" clearly indicates the recipe is being displayed. So displayed_recipe should be "R18".
+
+And for reported_check_ids, since there's no explicit mention of completing any of the three types of checks (C_SETUP, C_OBSERVE, C_RECIPE), it should be an empty list.
+
+Final result:
+{"displayed_recipe":"R18","reported_check_ids":[]}</think>```json
+{
+  "displayed_recipe": "R18",
+  "reported_check_ids": []
+}
+```

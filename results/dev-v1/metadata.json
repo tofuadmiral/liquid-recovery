@@ -1,0 +1,58 @@
+{
+  "started_at": "2026-11-02T23:24:24.452380+00:00",
+  "ended_at": "2026-11-02T23:28:01.525340+00:00",
+  "split": "dev",
+  "config": {
+    "temperature": 0.0,
+    "top_k": 0,
+    "max_tokens": 1536,
+    "context_budget": 8192,
+    "timeout_seconds": 60,
+    "seed": 17,
+    "repetition_penalty": 1.0
+  },
+  "source_hashes": {
+    "engine.py": "d89f1161018fa847fedd1bef2920f24b8b2ce7443f577f541c4655a7622db63d",
+    "evaluate.py": "26b35b636aecc955f51345ca25c419de69132af813a074e0711ca305af70dc6f",
+    "prompts/system.txt": "8f5b8ed92a7e175bd66f084c87112c54f33379f87aca1c05fa30318cd805e85c",
+    "data/procedures.json": "3378ef4751095c3c0298a32ba0a847d7177ad3253802b021b54dd9c0db917c67",
+    "data/dev.json": "a15179ea2c1716d870dc2a6e6abdbf7726bae3dae270ab502e1439a7dd313a66",
+    "data/heldout.json": "7b8539bcd5b276f90a8112f7c59d2d4e7937676ee30c13343f5e760c8c6f863a"
+  },
+  "model": {
+    "repo": "LiquidAI/LFM2.5-2.6B-MLX-4bit",
+    "revision": "04efa23776ce61ec34ec95ec34c859854c89542b",
+    "download_seconds": 64.83305887499955,
+    "quantization": {
+      "group_size": 64,
+      "bits": 4,
+      "mode": "affine",
+      "model.embed_tokens": {
+        "group_size": 64,
+        "bits": 6,
+        "mode": "affine"
+      }
+    },
+    "model_type": "lfm2"
+  },
+  "runtime_versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.22.1",
+    "huggingface-hub": "2.4.0",
+    "psutil": "7.2.2"
+  },
+  "hardware": "Apple M4 Pro, 14 CPU cores, 24 GB unified memory",
+  "os": "macOS-26.7.2-arm64-arm-64bit",
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "model_loads": [
+    {
+      "ready": true,
+      "load_seconds": 0.8416606250002587,
+      "rss_after_load_bytes": 934199296,
+      "mlx_active_after_load_bytes": 1583085576
+    }
+  ],
+  "method_order": "alternates LFM order per case; baselines first",
+  "notes": "No warm-up; first inference included. No cross-case KV cache. Greedy decoding; reasoning template unchanged. RSS sampled every 20 ms; MLX peak includes model and tensors, not whole-system RAM. Download excluded. Desktop apps not controlled; no IPC or contention validation."
+}

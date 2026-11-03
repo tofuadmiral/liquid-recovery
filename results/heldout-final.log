@@ -1,0 +1,282 @@
+H01a alarm_lookup: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H01a decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+Model loaded: 1.32 s
+H01a lfm_current: INVALID gold=C_OBSERVE correct=False 36.796s
+H01a lfm_full: INVALID gold=C_OBSERVE correct=False 33.328s
+H01b alarm_lookup: C_OBSERVE gold=E_SERVICE correct=False 0.000s
+H01b decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+H01b lfm_full: INVALID gold=E_SERVICE correct=False 37.895s
+H01b lfm_current: INVALID gold=E_SERVICE correct=False 48.862s
+H02a alarm_lookup: C_RECIPE gold=E_REPEAT correct=False 0.000s
+H02a decision_tree: E_REPEAT gold=E_REPEAT correct=True 0.000s
+H02a lfm_current: INVALID gold=E_REPEAT correct=False 47.071s
+H02a lfm_full: INVALID gold=E_REPEAT correct=False 50.224s
+H02b alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+H02b decision_tree: C_SETUP gold=C_SETUP correct=True 0.000s
+H02b lfm_full: INVALID gold=C_SETUP correct=False 60.000s
+Model loaded: 1.14 s
+H02b lfm_current: INVALID gold=C_SETUP correct=False 60.000s
+H03a alarm_lookup: C_OBSERVE gold=Q_RECIPE correct=False 0.000s
+H03a decision_tree: Q_RECIPE gold=Q_RECIPE correct=True 0.000s
+Model loaded: 1.04 s
+H03a lfm_current: INVALID gold=Q_RECIPE correct=False 59.863s
+H03a lfm_full: INVALID gold=Q_RECIPE correct=False 46.064s
+H03b alarm_lookup: C_OBSERVE gold=Q_RECIPE correct=False 0.000s
+H03b decision_tree: Q_RECIPE gold=Q_RECIPE correct=True 0.000s
+H03b lfm_full: INVALID gold=Q_RECIPE correct=False 41.432s
+H03b lfm_current: INVALID gold=Q_RECIPE correct=False 60.000s
+H04a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+H04a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+Model loaded: 1.14 s
+H04a lfm_current: INVALID gold=Q_FRESH correct=False 60.000s
+Model loaded: 2.48 s
+H04a lfm_full: INVALID gold=Q_FRESH correct=False 50.397s
+H04b alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+H04b decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+H04b lfm_full: INVALID gold=Q_FRESH correct=False 52.925s
+H04b lfm_current: INVALID gold=Q_FRESH correct=False 57.396s
+H05a alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+H05a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+H05a lfm_current: INVALID gold=Q_CONFLICT correct=False 59.952s
+H05a lfm_full: INVALID gold=Q_CONFLICT correct=False 51.839s
+H05b alarm_lookup: C_RECIPE gold=C_SETUP correct=False 0.000s
+H05b decision_tree: C_SETUP gold=C_SETUP correct=True 0.000s
+H05b lfm_full: INVALID gold=C_SETUP correct=False 60.000s
+Model loaded: 1.61 s
+H05b lfm_current: INVALID gold=C_SETUP correct=False 60.000s
+H06a alarm_lookup: C_OBSERVE gold=E_SERVICE correct=False 0.000s
+H06a decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+Model loaded: 0.98 s
+H06a lfm_current: INVALID gold=E_SERVICE correct=False 45.548s
+H06a lfm_full: INVALID gold=E_SERVICE correct=False 30.433s
+H06b alarm_lookup: C_OBSERVE gold=E_SERVICE correct=False 0.000s
+H06b decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.000s
+H06b lfm_full: INVALID gold=E_SERVICE correct=False 44.233s
+H06b lfm_current: INVALID gold=E_SERVICE correct=False 60.000s
+H07a alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+H07a decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+Model loaded: 1.58 s
+H07a lfm_current: INVALID gold=E_VERSION correct=False 43.139s
+H07a lfm_full: INVALID gold=E_VERSION correct=False 31.549s
+H07b alarm_lookup: C_RECIPE gold=E_VERSION correct=False 0.000s
+H07b decision_tree: E_VERSION gold=E_VERSION correct=True 0.000s
+H07b lfm_full: INVALID gold=E_VERSION correct=False 31.511s
+H07b lfm_current: INVALID gold=E_VERSION correct=False 32.883s
+H08a alarm_lookup: C_RECIPE gold=Q_OUTCOME correct=False 0.000s
+H08a decision_tree: Q_OUTCOME gold=Q_OUTCOME correct=True 0.000s
+H08a lfm_current: INVALID gold=Q_OUTCOME correct=False 26.302s
+H08a lfm_full: INVALID gold=Q_OUTCOME correct=False 33.616s
+H08b alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+H08b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H08b lfm_full: INVALID gold=C_OBSERVE correct=False 31.638s
+H08b lfm_current: INVALID gold=C_OBSERVE correct=False 36.780s
+H09a alarm_lookup: C_OBSERVE gold=Q_CONFLICT correct=False 0.000s
+H09a decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+H09a lfm_current: INVALID gold=Q_CONFLICT correct=False 30.709s
+H09a lfm_full: INVALID gold=Q_CONFLICT correct=False 35.618s
+H09b alarm_lookup: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H09b decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H09b lfm_full: INVALID gold=C_OBSERVE correct=False 34.989s
+H09b lfm_current: INVALID gold=C_OBSERVE correct=False 29.994s
+H10a alarm_lookup: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H10a decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H10a lfm_current: INVALID gold=C_OBSERVE correct=False 32.871s
+H10a lfm_full: INVALID gold=C_OBSERVE correct=False 34.507s
+H10b alarm_lookup: C_OBSERVE gold=Q_FRESH correct=False 0.000s
+H10b decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+H10b lfm_full: INVALID gold=Q_FRESH correct=False 31.094s
+H10b lfm_current: INVALID gold=Q_FRESH correct=False 32.575s
+H11a alarm_lookup: C_RECIPE gold=C_OBSERVE correct=False 0.000s
+H11a decision_tree: C_OBSERVE gold=C_OBSERVE correct=True 0.000s
+H11a lfm_current: INVALID gold=C_OBSERVE correct=False 35.249s
+H11a lfm_full: INVALID gold=C_OBSERVE correct=False 33.831s
+H11b alarm_lookup: C_RECIPE gold=E_SERVICE correct=False 0.000s
+H11b decision_tree: E_SERVICE gold=E_SERVICE correct=True 0.001s
+H11b lfm_full: INVALID gold=E_SERVICE correct=False 31.952s
+H11b lfm_current: INVALID gold=E_SERVICE correct=False 42.367s
+H12a alarm_lookup: C_RECIPE gold=Q_FRESH correct=False 0.000s
+H12a decision_tree: Q_FRESH gold=Q_FRESH correct=True 0.000s
+H12a lfm_current: INVALID gold=Q_FRESH correct=False 56.954s
+H12a lfm_full: INVALID gold=Q_FRESH correct=False 27.396s
+H12b alarm_lookup: C_RECIPE gold=Q_CONFLICT correct=False 0.000s
+H12b decision_tree: Q_CONFLICT gold=Q_CONFLICT correct=True 0.000s
+H12b lfm_full: INVALID gold=Q_CONFLICT correct=False 26.111s
+H12b lfm_current: INVALID gold=Q_CONFLICT correct=False 26.165s
+{
+  "alarm_lookup": {
+    "n": 24,
+    "correct": 3,
+    "delivered_correct": 3,
+    "passed": 3,
+    "valid_evidence_refs": 24,
+    "complete_gold_evidence": 3,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 21,
+    "valid_response": 15,
+    "escalations_required": 7,
+    "appropriate_escalations": 0,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 2.770850005617831e-05,
+    "latency_p95_seconds": 9.524999950372148e-05,
+    "latency_max_seconds": 0.00013962500088382512,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": [
+      "H01b",
+      "H02a",
+      "H02b",
+      "H03a",
+      "H03b",
+      "H04a",
+      "H04b",
+      "H05a",
+      "H05b",
+      "H06a",
+      "H06b",
+      "H07a",
+      "H07b",
+      "H08a",
+      "H08b",
+      "H09a",
+      "H10b",
+      "H11a",
+      "H11b",
+      "H12a",
+      "H12b"
+    ]
+  },
+  "decision_tree": {
+    "n": 24,
+    "correct": 24,
+    "delivered_correct": 24,
+    "passed": 24,
+    "valid_evidence_refs": 24,
+    "complete_gold_evidence": 24,
+    "unsupported_assertion": 0,
+    "unsupported_check_selection": 0,
+    "valid_response": 24,
+    "escalations_required": 7,
+    "appropriate_escalations": 7,
+    "false_escalations": 0,
+    "timeouts": 0,
+    "truncated": 0,
+    "latency_p50_seconds": 9.402100022271043e-05,
+    "latency_p95_seconds": 0.00036191599974699784,
+    "latency_max_seconds": 0.0014101670003583422,
+    "mlx_peak_bytes": 0,
+    "rss_peak_sampled_bytes": 0,
+    "prompt_tokens_range": [
+      0,
+      0
+    ],
+    "failure_ids": []
+  },
+  "lfm_current": {
+    "n": 24,
+    "correct": 0,
+    "delivered_correct": 0,
+    "passed": 0,
+    "valid_evidence_refs": 0,
+    "complete_gold_evidence": 0,
+    "unsupported_assertion": 24,
+    "unsupported_check_selection": 0,
+    "valid_response": 0,
+    "escalations_required": 7,
+    "appropriate_escalations": 0,
+    "false_escalations": 0,
+    "timeouts": 5,
+    "truncated": 19,
+    "latency_p50_seconds": 44.34355195800072,
+    "latency_p95_seconds": 60,
+    "latency_max_seconds": 60,
+    "mlx_peak_bytes": 2518576748,
+    "rss_peak_sampled_bytes": 2061647872,
+    "prompt_tokens_range": [
+      0,
+      1424
+    ],
+    "failure_ids": [
+      "H01a",
+      "H01b",
+      "H02a",
+      "H02b",
+      "H03a",
+      "H03b",
+      "H04a",
+      "H04b",
+      "H05a",
+      "H05b",
+      "H06a",
+      "H06b",
+      "H07a",
+      "H07b",
+      "H08a",
+      "H08b",
+      "H09a",
+      "H09b",
+      "H10a",
+      "H10b",
+      "H11a",
+      "H11b",
+      "H12a",
+      "H12b"
+    ]
+  },
+  "lfm_full": {
+    "n": 24,
+    "correct": 0,
+    "delivered_correct": 0,
+    "passed": 0,
+    "valid_evidence_refs": 0,
+    "complete_gold_evidence": 0,
+    "unsupported_assertion": 24,
+    "unsupported_check_selection": 0,
+    "valid_response": 0,
+    "escalations_required": 7,
+    "appropriate_escalations": 0,
+    "false_escalations": 0,
+    "timeouts": 2,
+    "truncated": 22,
+    "latency_p50_seconds": 34.74836616700031,
+    "latency_p95_seconds": 60,
+    "latency_max_seconds": 60,
+    "mlx_peak_bytes": 2672006866,
+    "rss_peak_sampled_bytes": 1850720256,
+    "prompt_tokens_range": [
+      0,
+      1962
+    ],
+    "failure_ids": [
+      "H01a",
+      "H01b",
+      "H02a",
+      "H02b",
+      "H03a",
+      "H03b",
+      "H04a",
+      "H04b",
+      "H05a",
+      "H05b",
+      "H06a",
+      "H06b",
+      "H07a",
+      "H07b",
+      "H08a",
+      "H08b",
+      "H09a",
+      "H09b",
+      "H10a",
+      "H10b",
+      "H11a",
+      "H11b",
+      "H12a",
+      "H12b"
+    ]
+  }
+}
