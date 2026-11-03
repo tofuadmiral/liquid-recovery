@@ -8,7 +8,7 @@ I would build Recovery, a local assistant that helps operators work through recu
 
 * **The moment:** an operator changes a case packer to a new product. It keeps stopping. The screen repeats an alarm, while the service specialist has to reconstruct the history and ask which checks already failed.
 
-* **The first customer:** an OEM carrying substantial included or warranty support. Its service leader buys; controls engineering helps deploy. Start with one nonrobotic side load case packer family and two recurring stop types. Qualify for a repeated machine design, an accountable procedure owner and an existing service budget.
+* **Start with packaging before consumer assistants.** Repeated machine designs, identifiable procedure owners and an existing service budget give us a narrow workflow to qualify. Sell to the service leader carrying included or warranty support; controls engineering integrates. Begin with one nonrobotic side load family and two recurring stop types.
 
 ### Make the next step easier to trust
 
@@ -26,7 +26,7 @@ I would build Recovery, a local assistant that helps operators work through recu
 
 ### The larger opportunity
 
-* **Turn service knowledge into a maintained product.** An OEM could give every customer a consistent recovery experience and reserve specialists for harder cases. Expand into adjacent packaging equipment after the first family works and a second OEM can deploy it economically.
+* **Improve with every approved release.** Review failed recoveries with the OEM, add confirmed outcomes to its test cases, and ship validated improvements to procedures and note interpretation. Expand to adjacent equipment after a second OEM deploys economically.
 
 Evidence gate: the replay changed the design. The model interprets notes; rules select the response. Full results retain the failures. Consistent interpretation on real incidents, hardware fit and customer savings remain unproved. [Inspect the replay and results](https://github.com/tofuadmiral/liquid-recovery). Model fit: [Liquid model card](https://huggingface.co/LiquidAI/LFM2.5-2.6B).
 
@@ -36,7 +36,7 @@ THE BUSINESS  /  FROM ONE MACHINE FAMILY TO A REPEATABLE PRODUCT
 
 ## Sell through the OEM. Earn the renewal.
 
-The OEM already owns the machine relationship, service channel and procedures. Recovery gives it a capability to bundle into service contracts. Our business works when each deployment adds less work than the value it creates.
+Recovery would be an OEM’s first purchase from Liquid, funded from its service budget. The OEM owns the plant relationship and can bundle Recovery into service contracts. Expansion depends on repeated deployment and measurable support savings.
 
 ### Charge for a result the buyer can capture
 
@@ -50,7 +50,7 @@ The OEM already owns the machine relationship, service channel and procedures. R
 
 * **Prove repetition early.** Keep the app, validation and updates common; configure machine data and procedures. The OEM approves procedures; we own releases. A second machine needs configuration only. Target ten engineering days for a second OEM after access, counting OEM preparation too. Customer knowledge stays isolated.
 
-### Build an advantage that survives a better model
+### Build value that survives interchangeable models
 
 * **Win on deployment and upkeep.** SOMIC, Pearson, Beckhoff and ei³ already offer relevant diagnostics or assistance. Test whether Recovery can deliver a bounded workflow with less integration work. Validated mappings, procedure compatibility and dependable updates must drive renewal.
 
@@ -60,6 +60,6 @@ The OEM already owns the machine relationship, service channel and procedures. R
 
 * **Run a gated pilot.** Two engineers own integration and workflow; I own discovery, labels and economics. Qualify in weeks one and two, integrate in three and four, shadow in five and six, then test supervised use and replication. Target 25% fewer specialist minutes per eligible incident.
 
-* **Stop when the case fails.** No usable history or procedure owner by week two; persistent unsupported selections; rules with lower upkeep; weak savings; costly hardware or onboarding; or buyers who reject production pricing after seeing value.
+* **Stop when the case fails.** No usable history or procedure owner by week two; persistent unsupported selections; rules with lower upkeep; weak savings; hardware that breaks the economics; a second OEM exceeding ten engineering days; or buyers who reject production pricing after seeing value.
 
 Sources: [Douglas](https://www.douglas-machine.com/products-solutions/case-and-tray-packers/), [Massman](https://massmanautomation.com/applications/cans-bottles/), [SOMIC](https://us.somic-packaging.com/service/digital-services/), [Pearson](https://pearsonpkg.com/technical-service/remote-service-support/), [Beckhoff](https://www.beckhoff.com/en-au/products/automation/twincat-projects-with-ai-supported-engineering/), [ei³](https://ei3.com/platform/iiot-feature/connected-ai). Availability differs by offering. AI assistance: Codex supported research, code, evaluation and writing under my direction. I will present the argument and its limits.
