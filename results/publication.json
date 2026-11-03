@@ -1,5 +1,5 @@
 {
-  "verified_at": "2026-11-03T01:53:59.956794+00:00",
+  "verified_at": "2026-11-03T02:01:39.505327+00:00",
   "repo": "https://github.com/tofuadmiral/liquid-recovery",
   "visibility": "public",
   "site": "https://liquid-recovery.vercel.app/",
@@ -8,8 +8,9 @@
   "memo_http": 200,
   "memo_pages": 2,
   "public_bytes_match_local": true,
-  "deployed_commit": "a2fd1b134374b27081439b0c0ddbc15af32d8ab3",
+  "deployed_commit": "6676654d2ff2ccae238fb14ac17da6903b0993f0",
   "site_sha256": "1d08e927408b5bab1bf1cb9813448c96f6429fdd54e4d8d4d0a50f3e5922352d",
-  "memo_sha256": "794e782a54553e295e21fb93d96d6f5a30201858f299a7707acf4f0aa02f8399",
-  "verification": "HTTP content and hashes plus isolated DOM functional tests; no interactive computer use"
+  "memo_sha256": "cc9056ea7206d287b65d65b83c9a28fc42400fd3054357af7c68364fe70d1e69",
+  "verification": "Public HTTP content and hashes. Revised memo rendered and visually verified as two pages. Replay bytes unchanged from the previously tested version.",
+  "assignment_review": "Full assignment text supplied by user and reviewed adversarially; material gaps incorporated"
 }
